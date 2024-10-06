@@ -10,10 +10,25 @@
     text-align: center;
 }
 
-.card {
-    height: 100px;
+.dpto-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card img{
-    height: 250px;
+.dpto-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-success {
+    color: green;
+}
+.text-danger {
+    color: red;
 }
