@@ -26,6 +26,13 @@
     border-radius: 8px;
 }
 
+#containerDptosAlquiler, #containerDptosVenta {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    gap: 20px; 
+  }
+
 .text-success {
     color: green;
 }

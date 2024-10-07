@@ -48,6 +48,12 @@ export const dptosAlquiler = [
 export const mostrarDptosAlquiler = (dptos) => {
   const container = document.getElementById("containerDptosAlquiler");
 
+  if (!container) {
+    console.error("El contenedor no se encontró en el DOM.");
+    return;
+  }
+
+
   let contenidoHTML = "";
 
   for (const dpto of dptos) {
@@ -71,4 +77,6 @@ export const mostrarDptosAlquiler = (dptos) => {
   container.innerHTML = contenidoHTML;
 };
 
-mostrarDptosAlquiler(dptosAlquiler);
+document.addEventListener('DOMContentLoaded', () => {
+    mostrarDptosAlquiler(dptosAlquiler);
+  });

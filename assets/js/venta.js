@@ -44,6 +44,10 @@ export const dptosVenta = [
   export const mostrarDptosVenta = (dptos) => {
     const container = document.getElementById("containerDptosVenta");
   
+    if (!container) {
+        console.error("El contenedor no se encontró en el DOM.");
+        return;
+      }
     let contenidoHTML = '';
   
     for (const dpto of dptos) {

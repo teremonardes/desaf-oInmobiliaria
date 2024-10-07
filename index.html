@@ -51,7 +51,7 @@
       <!-- Propiedades en venta -->
       <section id="venta">
         <h2>Propiedades en venta</h2>
-        <div id="containerDptos"></div>
+        <div id="containerDptosVenta"></div>
         <a href="venta.html" class="btn btn-dark"
           >Ver todas las propiedades en venta</a
         >
@@ -60,6 +60,8 @@
       <!-- Propiedades en alquiler -->
       <section id="alquiler" class="mb-5">
         <h2>Propiedades en alquiler</h2>
+
+        <div id="containerDptosAlquiler"></div>
 
 
         <a href="alquiler.html" class="btn btn-dark"
@@ -79,16 +81,17 @@
       crossorigin="anonymous"
     ></script>
     <script type="module">
-      import { mostrarDptosVenta } from './assets/js/index.js';
-      import { dptosVenta } from './assets/js/index-html';
-      
-      // Llama a la función mostrarDptos con los datos de dptosVenta
-      // document.addEventListener('DOMContentLoaded', () => {
-      //     mostrarDptos(dptosVenta, 'containerDptos');
-      // });
+      import { mostrarDptos } from './assets/js/index.js';
+      import { dptosAlquiler } from './assets/js/alquiler.js';
+      import { dptosVenta } from './assets/js/venta.js';
+    
+      document.addEventListener('DOMContentLoaded', () => {
+        mostrarDptos(dptosVenta, "containerDptosVenta");
+        mostrarDptos(dptosAlquiler, "containerDptosAlquiler");
+      });
     </script>
 
-<script type="module" src="./assets/js/index.js"></script>
+<!-- <script type="module" src="./assets/js/alquiler.js"></script> -->
 
   </body>
 </html>
